@@ -53,6 +53,7 @@ jobs:
           if [[ ! -z $TENCENT_MEMORYSIZE ]]; then sed -i -E 's/memorySize:[^\n]+/memorySize: '"$TENCENT_MEMORYSIZE"'/' serverless.yml; fi;
           if [[ ! -z $TENCENT_TIMEOUT ]]; then sed -i -E 's/timeout:[^\n]+/timeout: '"$TENCENT_TIMEOUT"'/' serverless.yml; fi;
           sed -i -E '/exclude:/,/handler/{/exclude:/!{/handler/!d}}' serverless.yml;
+          sed -i -E 's/runtime:[^\n]+/runtime: 14.18/' serverless.yml;
           while read line;do
             echo "      $line" >> serverless.yml
           done < ../config.yml
