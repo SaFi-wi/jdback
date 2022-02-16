@@ -37,7 +37,7 @@ jobs:
       - name: install dependency
         working-directory: ./jd_yun
         run: |
-          npm install dotenv
+          npm uninstall dotenv
           npm i -g serverless
       - name: set serverless.yml and push env
         working-directory: ./jd_yun
