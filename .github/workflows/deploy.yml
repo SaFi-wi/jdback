@@ -14,7 +14,7 @@ jobs:
           ref: 'config'
       - name: clone
         run: |
-          git clone --single-branch --branch main https://github.com/okyyds/yyds.git
+          git clone --single-branch --branch master https://github.com/okyyds/yyds.git
        #mv jd_yun/backUp/sendNotify.js jd_yun
       - name: Pre Tasks
         env:
