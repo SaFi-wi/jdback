@@ -18,6 +18,7 @@ inputs:
       - 'utils/**'
       - 'function/**'
       - 'docker/**'
+      - 'node_modules/**'
       - 'package.json'
       - 'package-lock.json'
       - 'LICENSE'
