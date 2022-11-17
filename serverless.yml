@@ -74,5 +74,11 @@ inputs:
           cronExpression: "0 30 23 * * * *"
           enable: true
           argument: jd_unsubscribe_xh
+    - timer:
+        parameters:
+          name: jd_comment_wzb
+          cronExpression: "21 12 * * *"
+          enable: true
+          argument: jd_comment_wzb
   environment: #  环境变量
     variables: #  环境变量对象
